@@ -1,4 +1,3 @@
-
 package daysofweek; // changed from package daysAndDates
 
 public class DaysOfWeek {
@@ -28,7 +27,11 @@ public class DaysOfWeek {
             case 7:
                 dayStr = "Saturday";
                 break;
+            // exception handling
+            default: 
+                throw new IllegalArgumentException("You entered " + numberOfDay + " but there are only 7 days in a week.");
         }
         return dayStr; // added return statement
     }
 }
+
